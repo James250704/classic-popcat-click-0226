@@ -3,13 +3,60 @@
 <html lang="en">
 	<head>
 		<title>POPCAT CLASSIC</title>
+		<meta charset="UTF-8" />
+
+		<style>
+			html {
+				height: 100%;
+				overflow: hidden;
+			}
+			body {
+				height: 100%;
+				margin: 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				background-color: #bdaa90;
+				user-select: none;
+				-moz-user-select: none;
+				-webkit-user-select: none;
+				position: relative;
+				overflow: hidden;
+			}
+
+			.title {
+				margin: 2em 0 0 0;
+				width: min(600px, 80%);
+			}
+
+			.cat-img {
+				height: 0;
+				flex-grow: 1;
+				width: 100%;
+				max-width: 800px;
+				background-position: bottom;
+				background-size: contain;
+				background-repeat: no-repeat;
+				touch-action: manipulation;
+				text-align: center;
+				color: white;
+				-webkit-text-stroke-width: 3px;
+				-webkit-text-stroke-color: black;
+				font-weight: 900;
+				font-size: 80px;
+				font-family: "Nunito", sans-serif;
+				word-wrap: break-word;
+			}
+
+			#p {
+				background-image: url("./imgs/p.png");
+			}
+		</style>
 	</head>
 
 	<body>
-		<!-- 新增容器包裹標題圖片與點擊數 -->
-		<div class="container">
-			<img class="title" src="imgs/popcat.svg" alt="POPCAT" />
-			<div class="cat-img" id="p">0</div>
-		</div>
+		<img class="title" src="imgs/popcat.svg" alt="POPCAT" />
+		<div class="cat-img" id="p">0</div>
 	</body>
 </html>
