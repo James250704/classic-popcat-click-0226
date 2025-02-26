@@ -5,6 +5,13 @@
 		<title>POPCAT CLASSIC</title>
 		<meta charset="UTF-8" />
 
+		<!-- Google font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap&text=0123456789"
+			rel="stylesheet"
+		/>
+
 		<style>
 			html {
 				height: 100%;
@@ -57,7 +64,7 @@
 				-webkit-text-stroke-width: 3px;
 				-webkit-text-stroke-color: black;
 				font-weight: 900;
-				font-size: 90px;
+				font-size: 80px;
 				font-family: "Nunito", sans-serif;
 				word-wrap: break-word;
 			}
@@ -140,6 +147,7 @@
 				/*Increment index for next pop noise*/
 				pop_i = (pop_i + 1) % pops.length;
 
+				/*Increment pop count*/
 				pop_count++;
 				cat.innerHTML = pop_count;
 				setCookie("pop_count", pop_count, 365);
